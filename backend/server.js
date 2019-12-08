@@ -8,8 +8,8 @@ const dbUrl = 'mongodb://localhost/crudwithredux';
 
 function validate(data) {
   let errors = {};
-  if (data.title === '') errors.title = "Can't be empty";
-  if (data.cover === '') errors.cover = "Can't be empty";
+  if (data.title === '') errors.title = "Can't be empty in bckend";
+  if (data.cover === '') errors.cover = "Can't be empty in bckend";
   const isValid = Object.keys(errors).length === 0
   return { errors, isValid };
 }
